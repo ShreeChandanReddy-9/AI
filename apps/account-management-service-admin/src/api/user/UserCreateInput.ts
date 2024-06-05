@@ -1,0 +1,34 @@
+import { InputJsonValue } from "../../types";
+
+export type UserCreateInput = {
+  battingAverage?: number | null;
+  bestBowling?: string | null;
+  bowlingAverage?: number | null;
+  economyRate?: number | null;
+  email?: string | null;
+  fieldingCatches?: number | null;
+  fieldingRunouts?: number | null;
+  fieldingStumpings?: number | null;
+  fifties?: number | null;
+  firstName?: string | null;
+  followedUsers?: string | null;
+  followingUsers?: string | null;
+  highestScore?: number | null;
+  hundreds?: number | null;
+  lastName?: string | null;
+  matchesPlayed?: number | null;
+  mobileNumber?: string | null;
+  name?: string | null;
+  oversBowled?: number | null;
+  password: string;
+  profileImage?: InputJsonValue;
+  profileStats?: InputJsonValue;
+  roles: InputJsonValue;
+  runsConceded?: number | null;
+  totalBallsFaced?: number | null;
+  totalFours?: number | null;
+  totalRuns?: number | null;
+  totalSixes?: number | null;
+  username: string;
+  wickets?: number | null;
+};

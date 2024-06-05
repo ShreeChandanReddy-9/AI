@@ -1,0 +1,44 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  battingAverage    Float?
+  bestBowling       String?
+  bowlingAverage    Float?
+  createdAt         DateTime @default(now())
+  economyRate       Float?
+  email             String?  @unique
+  fieldingCatches   Int?
+  fieldingRunouts   Int?
+  fieldingStumpings Int?
+  fifties           Int?
+  firstName         String?
+  followedUsers     String?
+  followingUsers    String?
+  highestScore      Int?
+  hundreds          Int?
+  id                String   @id @default(cuid())
+  lastName          String?
+  matchesPlayed     Int?
+  mobileNumber      String?
+  name              String?
+  oversBowled       Float?
+  password          String
+  profileImage      Json?
+  profileStats      Json?
+  roles             Json
+  runsConceded      Int?
+  totalBallsFaced   Int?
+  totalFours        Int?
+  totalRuns         Int?
+  totalSixes        Int?
+  updatedAt         DateTime @updatedAt
+  username          String   @unique
+  wickets           Int?
+}

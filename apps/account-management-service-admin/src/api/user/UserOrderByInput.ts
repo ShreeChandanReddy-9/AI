@@ -1,0 +1,37 @@
+import { SortOrder } from "../../util/SortOrder";
+
+export type UserOrderByInput = {
+  battingAverage?: SortOrder;
+  bestBowling?: SortOrder;
+  bowlingAverage?: SortOrder;
+  createdAt?: SortOrder;
+  economyRate?: SortOrder;
+  email?: SortOrder;
+  fieldingCatches?: SortOrder;
+  fieldingRunouts?: SortOrder;
+  fieldingStumpings?: SortOrder;
+  fifties?: SortOrder;
+  firstName?: SortOrder;
+  followedUsers?: SortOrder;
+  followingUsers?: SortOrder;
+  highestScore?: SortOrder;
+  hundreds?: SortOrder;
+  id?: SortOrder;
+  lastName?: SortOrder;
+  matchesPlayed?: SortOrder;
+  mobileNumber?: SortOrder;
+  name?: SortOrder;
+  oversBowled?: SortOrder;
+  password?: SortOrder;
+  profileImage?: SortOrder;
+  profileStats?: SortOrder;
+  roles?: SortOrder;
+  runsConceded?: SortOrder;
+  totalBallsFaced?: SortOrder;
+  totalFours?: SortOrder;
+  totalRuns?: SortOrder;
+  totalSixes?: SortOrder;
+  updatedAt?: SortOrder;
+  username?: SortOrder;
+  wickets?: SortOrder;
+};
