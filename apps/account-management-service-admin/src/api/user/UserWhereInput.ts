@@ -1,0 +1,37 @@
+import { FloatNullableFilter } from "../../util/FloatNullableFilter";
+import { StringNullableFilter } from "../../util/StringNullableFilter";
+import { IntNullableFilter } from "../../util/IntNullableFilter";
+import { StringFilter } from "../../util/StringFilter";
+import { JsonFilter } from "../../util/JsonFilter";
+
+export type UserWhereInput = {
+  battingAverage?: FloatNullableFilter;
+  bestBowling?: StringNullableFilter;
+  bowlingAverage?: FloatNullableFilter;
+  economyRate?: FloatNullableFilter;
+  email?: StringNullableFilter;
+  fieldingCatches?: IntNullableFilter;
+  fieldingRunouts?: IntNullableFilter;
+  fieldingStumpings?: IntNullableFilter;
+  fifties?: IntNullableFilter;
+  firstName?: StringNullableFilter;
+  followedUsers?: StringNullableFilter;
+  followingUsers?: StringNullableFilter;
+  highestScore?: IntNullableFilter;
+  hundreds?: IntNullableFilter;
+  id?: StringFilter;
+  lastName?: StringNullableFilter;
+  matchesPlayed?: IntNullableFilter;
+  mobileNumber?: StringNullableFilter;
+  name?: StringNullableFilter;
+  oversBowled?: FloatNullableFilter;
+  profileImage?: JsonFilter;
+  profileStats?: JsonFilter;
+  runsConceded?: IntNullableFilter;
+  totalBallsFaced?: IntNullableFilter;
+  totalFours?: IntNullableFilter;
+  totalRuns?: IntNullableFilter;
+  totalSixes?: IntNullableFilter;
+  username?: StringFilter;
+  wickets?: IntNullableFilter;
+};

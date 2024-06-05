@@ -1,0 +1,36 @@
+import { JsonValue } from "type-fest";
+
+export type User = {
+  battingAverage: number | null;
+  bestBowling: string | null;
+  bowlingAverage: number | null;
+  createdAt: Date;
+  economyRate: number | null;
+  email: string | null;
+  fieldingCatches: number | null;
+  fieldingRunouts: number | null;
+  fieldingStumpings: number | null;
+  fifties: number | null;
+  firstName: string | null;
+  followedUsers: string | null;
+  followingUsers: string | null;
+  highestScore: number | null;
+  hundreds: number | null;
+  id: string;
+  lastName: string | null;
+  matchesPlayed: number | null;
+  mobileNumber: string | null;
+  name: string | null;
+  oversBowled: number | null;
+  profileImage: JsonValue;
+  profileStats: JsonValue;
+  roles: JsonValue;
+  runsConceded: number | null;
+  totalBallsFaced: number | null;
+  totalFours: number | null;
+  totalRuns: number | null;
+  totalSixes: number | null;
+  updatedAt: Date;
+  username: string;
+  wickets: number | null;
+};
